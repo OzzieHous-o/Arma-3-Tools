@@ -1,0 +1,30 @@
+---------- ERROR INFORMATION ----------
+
+e-10647 - You have either not correctly re-pbo your mission folder, or Arma is caching the pbo. Please check you have re-pbo your mission folder, if you have please close Arma and try again.
+
+e-10646 - The path to the PBO cannot be found. You're file name must include .pbo
+
+e-10645 - You're MPMissionCache folder can't be detected. Please make sure the path is C:\Users\YOUR_USERNAME\AppData\Local\Arma 3\MPMissionsCache
+
+e-10644 - We couldn't detect any folder called Arma 3 in C:\Users\YOUR_USERNAME\AppData\Local 
+
+
+---------- GENERAL INFORMATION ----------
+
+Usage of this program is simple. Choose your MPMissionCache folder from navigating to %localappdata%\Arma 3 and selecting the MPMissionCache folder.
+After that, navigate to you're Arma 3 directory (where the game is installed) and select a .pbo file you wish to move to the cache folder.
+
+Save settings(if needed) and select "Move PBO" the program will delete the old .pbo from the cache folder, and move the newly selected PBO to the cache folder.
+
+If settings are saved, they will be reloaded every time you open the program. If for any reason the settings don't save just press "Save Settings" a second time.
+You can find the saved settings in Program Startup location & \DCA3TOOLS.ini alternatively you can press "Open Settings File" from the main page.
+
+
+
+
+---------- CREDITS ----------
+
+This program was solely created by Drunken Cheetah. 
+Credits to Stack Overflow.
+
+You do not have permission to re-post this program without my consent.
