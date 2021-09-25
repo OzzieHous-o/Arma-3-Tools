@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Arma 3 Tools")>
 <Assembly: AssemblyDescription("While mission testing, quickly move your .pbo from edit location to cache folder, to prevent having to download the mission on each edit.")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyCompany("https://github.com/System32-0")>
 <Assembly: AssemblyProduct("Arma 3 Tools")>
-<Assembly: AssemblyCopyright("Copyright © Drunken Cheetah 2021")>
+<Assembly: AssemblyCopyright("Copyright © System32 - 2021")>
 <Assembly: AssemblyTrademark("DC, S32")>
 
 <Assembly: ComVisible(False)>

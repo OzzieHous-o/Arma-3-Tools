@@ -13,32 +13,13 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim lLoad As Boolean
-        lLoad = oIniFile.LoadFile(Application.StartupPath & "\DCA3TOOLS.ini")
+        lLoad = oIniFile.LoadFile(Application.StartupPath & "\SYS32TOOLS.ini")
         Dim str1 As String = oIniFile.Items("CACHE_FOLDER_PATH")
         Dim str2 As String = oIniFile("MP_MISSION_PATH")
 
         TextBox1.Text = str1
         TextBox2.Text = str2
         Button3.Select()
-
-        Try
-            Dim status As String = System.Text.Encoding.ASCII.GetString(WC1.DownloadData("https://gitlab.com/DrunkenCheetah/status/-/raw/main/README.txt"))
-
-            If status.ToString.Contains("leaked") Then
-                statuss.Text = "THIS PROGRAM HAS BEEN REPOSTED WITHOUT PERMISSION. PROGRAM DISABLED! PLEASE CONTACT ME."
-                statuss.ForeColor = Color.Red
-                Button1.Enabled = False
-                Button2.Enabled = False
-                Button3.Enabled = False
-                Button4.Enabled = False
-                Button5.Enabled = False
-                Button6.Enabled = False
-                TextBox1.Enabled = False
-                TextBox2.Enabled = False
-                flashLabel.Start()
-            End If
-        Catch ax As Exception
-        End Try
     End Sub
     Private Sub TextBox1_MouseHover(sender As Object, e As EventArgs) Handles TextBox1.MouseHover
         tt.Show("You can also double click to automatically add the folder.", TextBox1)
@@ -55,7 +36,7 @@ Public Class Form1
             MessageBox.Show("All fields are required.", "ALERT", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             Dim lSave As Boolean
-            lSave = oIniFile.SaveFile(Application.StartupPath & "\DCA3TOOLS.ini")
+            lSave = oIniFile.SaveFile(Application.StartupPath & "\SYS32TOOLS.ini")
             If (lSave) Then
                 oIniFile.Items("CACHE_FOLDER_PATH") = TextBox1.Text
                 oIniFile("MP_MISSION_PATH") = TextBox2.Text
@@ -68,8 +49,8 @@ Public Class Form1
         End If
     End Sub
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If System.IO.File.Exists(Application.StartupPath & "\DCA3TOOLS.ini") Then
-            System.IO.File.Delete(Application.StartupPath & "\DCA3TOOLS.ini")
+        If System.IO.File.Exists(Application.StartupPath & "\SYS32TOOLS.ini") Then
+            System.IO.File.Delete(Application.StartupPath & "\SYS32TOOLS.ini")
             MessageBox.Show("File has been deleted!", "ALERT", MessageBoxButtons.OK)
         End If
     End Sub
@@ -132,14 +113,11 @@ Public Class Form1
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        If System.IO.File.Exists(Application.StartupPath & "\DCA3TOOLS.ini") Then
-            Process.Start("notepad.exe", Application.StartupPath & "\DCA3TOOLS.ini")
+        If System.IO.File.Exists(Application.StartupPath & "\SYS32TOOLS.ini") Then
+            Process.Start("notepad.exe", Application.StartupPath & "\SYS32TOOLS.ini")
         Else
             MessageBox.Show("We couldn't find any saved ini file. Please save settings before trying to open it!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-    End Sub
-    Private Sub flashLabel_Tick(sender As Object, e As EventArgs) Handles flashLabel.Tick
-        statuss.Visible = Not statuss.Visible
     End Sub
     Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
         TextBox1.Clear()

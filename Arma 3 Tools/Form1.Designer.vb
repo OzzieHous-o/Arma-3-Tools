@@ -33,17 +33,12 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.statuss = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.flashLabel = New System.Windows.Forms.Timer(Me.components)
-        Me.contactLabel = New System.Windows.Forms.Timer(Me.components)
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -140,6 +135,17 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(6, 122)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(159, 31)
+        Me.Button7.TabIndex = 3
+        Me.Button7.Text = "Clear Form"
+        Me.ToolTip1.SetToolTip(Me.Button7, "Clear text fields. Note: This won't save settings. Same entries will be loaded ne" &
+        "xt restart, unless you save new settings.")
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(6, 86)
@@ -178,47 +184,11 @@ Partial Class Form1
         Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.ToolTip1.ToolTipTitle = "Arma 3 Tools - Tips"
         '
-        'StatusStrip1
-        '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statuss})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 173)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(671, 22)
-        Me.StatusStrip1.SizingGrip = False
-        Me.StatusStrip1.TabIndex = 12
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'statuss
-        '
-        Me.statuss.Name = "statuss"
-        Me.statuss.Size = New System.Drawing.Size(656, 17)
-        Me.statuss.Spring = True
-        '
-        'flashLabel
-        '
-        Me.flashLabel.Interval = 800
-        '
-        'contactLabel
-        '
-        Me.contactLabel.Interval = 700
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(6, 122)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(159, 31)
-        Me.Button7.TabIndex = 3
-        Me.Button7.Text = "Clear Form"
-        Me.ToolTip1.SetToolTip(Me.Button7, "Clear text fields. Note: This won't save settings. Same entries will be loaded ne" &
-        "xt restart, unless you save new settings.")
-        Me.Button7.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(671, 195)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.ClientSize = New System.Drawing.Size(671, 183)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label4)
@@ -240,8 +210,6 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Arma 3 Tools"
         Me.GroupBox1.ResumeLayout(False)
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -261,9 +229,5 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents statuss As ToolStripStatusLabel
-    Friend WithEvents flashLabel As Timer
-    Friend WithEvents contactLabel As Timer
     Friend WithEvents Button7 As Button
 End Class

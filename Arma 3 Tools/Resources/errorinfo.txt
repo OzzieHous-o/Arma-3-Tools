@@ -24,7 +24,5 @@ You can find the saved settings in Program Startup location & \DCA3TOOLS.ini alt
 
 ---------- CREDITS ----------
 
-This program was solely created by Drunken Cheetah. 
+This program was solely created by System32 
 Credits to Stack Overflow.
-
-You do not have permission to re-post this program without my consent.
