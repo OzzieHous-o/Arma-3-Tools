@@ -17,7 +17,7 @@ After that, navigate to you're Arma 3 directory (where the game is installed) an
 Save settings(if needed) and select "Move PBO" the program will delete the old .pbo from the cache folder, and move the newly selected PBO to the cache folder.
 
 If settings are saved, they will be reloaded every time you open the program. If for any reason the settings don't save just press "Save Settings" a second time.
-You can find the saved settings in Program Startup location & \DCA3TOOLS.ini alternatively you can press "Open Settings File" from the main page.
+You can find the saved settings in Program Startup location & \SYS32TOOLS.ini alternatively you can press "Open Settings File" from the main page.
 
 
 
